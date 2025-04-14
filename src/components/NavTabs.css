@@ -1,0 +1,43 @@
+.nav-tabs {
+  text-align: center;
+  margin: 20px 0;
+}
+
+header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+  color: #6a5acd; /* Lilac */
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  display: inline;
+  margin: 0 10px;
+}
+
+a.nav-link {
+  text-decoration: none;
+  color: #6a5acd; /* Lilac */
+  padding: 10px;
+  font-size: 1.2em;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+a.nav-link.active {
+  font-weight: bold;
+  color: #6a5acd; /* Lilac */
+  border-bottom: 2px solid #6a5acd; /* Lilac underline */
+}
+
+a.nav-link:hover {
+  text-decoration: underline;
+  color: #ba55d3; /* Medium orchid */
+}

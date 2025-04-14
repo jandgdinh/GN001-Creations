@@ -1,13 +1,13 @@
-import Project from "../components/Project";
-import '../components/Project.css';
+import Gallery from "../components/Gallery";
+import '../components/Gallery.css';
 import weatherDashboardImage from '../assets/weatherDashboard.png';
 import codingQuizImage from '../assets/codingQuiz.png';
 import employeeTrackerImage from '../assets/employeeTracker.png';
 import vehicleCreatorImage from '../assets/vehicleCreator.png';
 import portfolioImage from '../assets/screenshot.png';
 
-function Portfolio() {
-  const projectData = [
+function GalleryPage() {
+  const galleryData = [
     {
       title: 'Doomsday Depot',
       image: portfolioImage,
@@ -68,16 +68,16 @@ function Portfolio() {
 
   return (
     <>
-    <h2>Projects</h2>
-    <div className="projects-container">
-      {projectData.map((project, index) => (
-        <Project
+    <h2>Gallery</h2>
+    <div className="gallery-container">
+      {galleryData.map((gallery, index) => (
+        <Gallery
           key={index}
-          title={project.title}
-          image={project.image}
-          description={project.description}
-          githubLink={project.githubLink}
-          deployedLink={project.deployedLink} 
+          title={gallery.title}
+          image={gallery.image}
+          description={gallery.description}
+          githubLink={gallery.githubLink}
+          deployedLink={gallery.deployedLink} 
         />
       ))}
     </div>
@@ -85,4 +85,4 @@ function Portfolio() {
   );
 }
 
-export default Portfolio;
+export default GalleryPage;

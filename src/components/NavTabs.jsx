@@ -1,5 +1,5 @@
 import { Link, useLocation } from 'react-router-dom';
-import '../NavTabs.css';
+import './NavTabs.css';
 
 function NavTabs() {
   const currentPage = useLocation().pathname;
@@ -19,10 +19,10 @@ function NavTabs() {
       </li>
       <li className="nav-item">
         <Link
-          to="/Portfolio"
+          to="/Gallery"
           className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
         >
-          Portfolio
+          Gallery
         </Link>
       </li>
       <li className="nav-item">
