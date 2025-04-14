@@ -1,40 +1,52 @@
 .contact-form-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: #1a1a2e; 
-    color: #ffffff; 
-    border-radius: 8px;
-  }
-  
-  .contact-form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-input {
-    margin-bottom: 1rem;
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
-  
-  .form-button {
-    padding: 0.5rem 1rem;
-    background-color: #0f3460;
-    color: #ffffff; 
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .form-button:hover {
-    background-color: #16213e; 
-  }
-  
-  .error {
-    color: #ff4d4d; 
-    margin-top: -0.5rem;
-    margin-bottom: 1rem;
-  }
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fffaf5; /* Very light pastel cream */
+  color: #6a5acd; /* Lilac */
+  border-radius: 8px;
+  border: 1px solid #f8bbd0; /* Light pink accent */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for better appearance */
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #f8bbd0; /* Light pink border */
+  border-radius: 4px;
+  background-color: #fff; /* White background for inputs */
+  color: #6a5acd; /* Lilac text */
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #6a5acd; /* Lilac border on focus */
+  box-shadow: 0 0 5px rgba(106, 90, 205, 0.5); /* Lilac glow */
+}
+
+.form-button {
+  padding: 0.5rem 1rem;
+  background-color: #f8bbd0; /* Light pink */
+  color: #fff; /* White text */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.form-button:hover {
+  background-color: #ffe4e1; /* Lighter pastel pink */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.error {
+  color: #ff4d4d; /* Red for error messages */
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.9em;
+}
