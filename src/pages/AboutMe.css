@@ -1,40 +1,97 @@
-.home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url('assets/images/background.avif'); /* Corrected syntax */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    flex-direction: column;
-  }
-  
-  .card {
-    max-width: 777px;
-    padding: 20px;
-    margin: 20px;
-    background-color: white; /* Ensures the card has a white background */
-    border-radius: 8px; /* Adds rounded corners to the card */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow to the card */
-  }
-  
-  .card-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .card-content p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    text-align: center;
-  }
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fffaf5; /* Very light pastel cream */
+}
 
-  .card-content img {
-    width: 333px;
-    height: 333px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 20px;
-  }
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about-content {
+  max-width: 800px;
+  text-align: center;
+}
+
+.about-content .card {
+  margin: 20px auto;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.card {
+  border: 2px solid #f8bbd0; /* Light pink accent */
+  background-color: #fffaf5; /* Very light pastel cream */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.h4-blob {
+  font-size: 1.2em;
+  color: #6a5acd; /* Lilac */
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.portfolio-button {
+  background-color: #f8bbd0; /* Light pink accent */
+  color: #6a5acd; /* Lilac */
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.portfolio-button:hover {
+  background-color: #ffe4e1; /* Lighter pastel pink */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.featured-cakes {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.featured-cakes h2 {
+  font-size: 2em;
+  color: #6a5acd; /* Lilac */
+  margin-bottom: 20px;
+}
+
+.carousel-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-image {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+.carousel-title {
+  font-size: 1.5em;
+  color: #6a5acd; /* Lilac */
+}

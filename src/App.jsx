@@ -2,9 +2,10 @@ import { Outlet } from 'react-router-dom';
 import Nav from './components/NavTabs';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faFacebook, faPinterest } from '@fortawesome/free-brands-svg-icons';
 import SplashScreen from './components/SplashScreen';
 import { useState, useEffect } from 'react';
+import cakeLogo from "./assets/gn001creationslogo.jpg";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,26 +24,28 @@ function App() {
   return (
     <>
       <header>
-        <h1>John Dinh | Full Stack Developer</h1>
+      <div className="logo-container">
+        <img src={cakeLogo} alt="GN001 Cakes Logo" className="logo-image" />
+      </div>
       </header>
-      <Nav  />
+      <Nav />
       <main className="mx-3">
         <Outlet />
       </main>
       <footer>
-        <p>&copy; 2024 John Dinh</p>
+        <p>&copy; 2025 GN001 Cakes</p>
         <div className="footer-links">
-          <a href="https://github.com/jandgdinh" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} size="2x" />
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} size="2x" />
           </a>
-          <a href="https://www.linkedin.com/in/koukijohn" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} size="2x" />
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faFacebook} size="2x" />
           </a>
-          <a href="https://twitter.com/thejohndinh" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter} size="2x" />
+          <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faPinterest} size="2x" />
           </a>
         </div>
-     </footer>
+      </footer>
     </>
   );
 }

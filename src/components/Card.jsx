@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import '../components/Card.css'; // Assuming you have a CSS file for styling
 
 function Card({ title, image, content }) {
   return (

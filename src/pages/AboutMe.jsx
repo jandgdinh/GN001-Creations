@@ -1,28 +1,64 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Slider from "react-slick";
 import "../App.css";
 import "../pages/AboutMe.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-import "../components/Project.css";
-import profilePic from "../assets/profilePic.jpg";
-import siteLogo from "../sitelogo.png";
+// import cake1 from "../assets/cake1.jpg";
+// import cake2 from "../assets/cake2.jpg";
+// import cake3 from "../assets/cake3.jpg";
 
 export default function AboutMe() {
+  const featuredCakes = [
+    { id: 1, image: "https://via.placeholder.com/600x400?text=Chocolate+Fudge+Cake", title: "Chocolate Fudge Cake" },
+    { id: 2, image: "https://via.placeholder.com/600x400?text=Vanilla+Buttercream+Cake", title: "Vanilla Buttercream Cake" },
+    { id: 3, image: "https://via.placeholder.com/600x400?text=Red+Velvet+Cake", title: "Red Velvet Cake" },
+  ];
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
+
   return (
-    <div className="home">
-      <img src={siteLogo} alt="John Dinh" width="500px" />
-      <div className="card">
-        <div className="card-content">
-          <h4 className="h4-blob">
-            Hi, my name is John Dinh, and I am a highly skilled Full Stack Developer based in Seattle, WA. I have a passion for creating efficient, scalable, and user-friendly web applications.
-          </h4>
-          <h4 className="h4-blob">
-            With extensive experience in HTML, CSS, JavaScript, Typescript, React, Node.js, Express, Sequelize, PostgreSQL, Mongoose, MongoDB, GraphQL, C, and Python, I bring a diverse skill set to the table. My expertise allows me to tackle complex problems and deliver high-quality solutions.
-          </h4>
-          <h4 className="h4-blob">
-            I am actively seeking opportunities as a Full Stack Developer or software engineering intern where I can contribute to innovative projects and grow within a dynamic team. Let's build something amazing together!
-          </h4>
-          <img src={profilePic} alt="John Dinh" width="500px" />
+    <div className="about-container">
+
+      <div className="about-content">
+        <div className="card">
+          <div className="card-content">
+            <h4 className="h4-blob">
+              Welcome to GN001 Creations, your destination for delicious, custom-made cakes that bring sweetness to every occasion!
+            </h4>
+            <h4 className="h4-blob">
+              At GN001 Creations, we specialize in crafting cakes that are not only visually stunning but also irresistibly tasty. From birthdays to weddings, we create cakes that make your celebrations unforgettable.
+            </h4>
+            <h4 className="h4-blob">
+              Using only the finest ingredients, we offer a variety of flavors and designs to suit your preferences. Let us help you create the perfect cake for your special moments!
+            </h4>
+          </div>
+          <div className="button-container">
+            <Link to="/portfolio">
+              <button className="portfolio-button">View Our Gallery</button>
+            </Link>
+          </div>
         </div>
+        <div className="featured-cakes">
+        <h2>Featured Cakes</h2>
+        <Slider {...sliderSettings}>
+          {featuredCakes.map((cake) => (
+            <div key={cake.id} className="carousel-slide">
+              <img src={cake.image} alt={cake.title} className="carousel-image" />
+              <h3 className="carousel-title">{cake.title}</h3>
+            </div>
+          ))}
+        </Slider>
+      </div>
       </div>
     </div>
   );

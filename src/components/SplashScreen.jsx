@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../sitelogo.png'; 
+import logo from '../assets/gn001creationslogo.jpg'; // Adjust the path to your logo image
 import './SplashScreen.css'; 
 
 const SplashScreen = () => {
