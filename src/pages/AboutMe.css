@@ -5,6 +5,8 @@
   justify-content: center;
   padding: 20px;
   background-color: #fffaf5; /* Very light pastel cream */
+  max-width: 100%; /* Ensure the container doesn't overflow */
+  overflow: hidden; /* Prevent content from spilling out */
 }
 
 .logo-container {
@@ -19,14 +21,18 @@
 }
 
 .about-content {
-  max-width: 800px;
+  max-width: 800px; /* Restrict the content width */
   text-align: center;
+  width: 100%; /* Ensure it fits within the container */
+  box-sizing: border-box; /* Include padding and border in width calculations */
 }
 
 .about-content .card {
   margin: 20px auto;
-  width: 100%;
-  max-width: 1000px;
+  width: 100%; /* Ensure the card fits within the content box */
+  max-width: 800px; /* Restrict the card width */
+  padding: 20px;
+  box-sizing: border-box; /* Prevent overflow due to padding */
 }
 
 .card {
@@ -94,4 +100,37 @@
 .carousel-title {
   font-size: 1.5em;
   color: #6a5acd; /* Lilac */
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+  .about-content .card {
+    max-width: 90%; /* Reduce the card width to fit smaller screens */
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .h4-blob {
+    font-size: 1em; /* Reduce font size for better readability */
+  }
+
+  .portfolio-button {
+    font-size: 0.9em; /* Adjust button size */
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-content .card {
+    max-width: 95%; /* Further reduce the card width for very small screens */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .h4-blob {
+    font-size: 0.9em; /* Further reduce font size */
+  }
+
+  .portfolio-button {
+    font-size: 0.8em; /* Adjust button size */
+    padding: 6px 12px;
+  }
 }
