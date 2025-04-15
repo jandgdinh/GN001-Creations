@@ -1,6 +1,8 @@
 import Gallery from "../components/Gallery";
 import '../components/Gallery.css';
-
+import { useState } from "react";
+import Modal from "../components/Modal";
+import Card from "../components/Card";
 import alvinaCake from "../assets/alvinacake.jpg";
 import oreoCake from "../assets/oreo.jpg";
 import galentinesCake from "../assets/galentinescake.jpg";
@@ -11,7 +13,17 @@ import zerosCake from "../assets/zeroscake.jpg";
 import kidsHappyCake from "../assets/kidshappycake.jpg";
 
 
+
 function GalleryPage() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const handleImageClick = (image) => {
+    setSelectedImage(image);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedImage(null);
+  };
   const galleryData = [
     {
       title: "Alvina's Aura Cake",
@@ -80,30 +92,28 @@ function GalleryPage() {
       <h2>Gallery</h2>
       <div className="gallery-container">
         {galleryData.map((gallery, index) => (
-          <Gallery
-            key={index}
-            title={gallery.title}
-            image={gallery.image}
-            description={gallery.description}
-            size={gallery.size}
-            cakeprofile={gallery.cakeprofile}
-          />
+          <div key={index} onClick={() => handleImageClick(gallery.image)}>
+            <Gallery
+              title={gallery.title}
+              image={gallery.image}
+              description={gallery.description}
+              size={gallery.size}
+              cakeprofile={gallery.cakeprofile}
+            />
+          </div>
         ))}
       </div>
       <h2>Client Gallery</h2>
       <div className="clientgallery-container">
-
-        `        {clientGalleryData.map((gallery, index) => (
-          <Gallery
-            key={index}
-            title={gallery.title}
-            image={gallery.image}
-            description={gallery.description}
-            size={gallery.size}
-            cakeprofile={gallery.cakeprofile}
-          />
+        {clientGalleryData.map((gallery, index) => (
+          <div key={index} onClick={() => handleImageClick(gallery.image)}>
+            <Card
+              image={gallery.image}
+            />
+          </div>
         ))}
       </div>
+      <Modal image={selectedImage} onClose={handleCloseModal} />
     </>
   );
 }
