@@ -5,13 +5,11 @@
   overflow: hidden;
   width: 100%;
   max-width: 300px; /* Consistent card width */
-  height: 450px; /* Increased card height to accommodate larger image */
   margin: 16px;
   background-color: #fffaf5; /* Very light pastel cream */
   transition: transform 0.3s, box-shadow 0.3s;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 
 .gallery-card:hover {
@@ -30,7 +28,7 @@
 
 .gallery-image {
   width: 100%;
-  height: 250px; /* Increased image height */
+  height: 250px; /* Fixed image height */
   object-fit: cover; /* Ensures the image fits within the card */
   border-bottom: 1px solid #f8bbd0; /* Light pink border for separation */
 }
@@ -47,38 +45,16 @@
   color: #6a5acd; /* Lilac */
 }
 
-.gallery-description {
-  font-size: 0.9em; /* Smaller description text */
+.gallery-description,
+.gallery-size,
+.gallery-cakeprofile {
+  font-size: 0.9em; /* Smaller text for descriptions */
   color: #555;
-  margin-bottom: 16px;
+  margin-bottom: 8px;
 }
 
-.gallery-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto; /* Push links to the bottom of the card */
-}
-
-.gallery-link {
-  color: #6a5acd; /* Lilac */
-  text-decoration: none;
-  font-size: 1em;
-  transition: color 0.3s;
-}
-
-.gallery-link:hover {
-  text-decoration: underline;
-  color: #ba55d3; /* Medium orchid */
-}
-
-#github {
-  width: 24px;
-  height: 24px;
-  object-fit: cover;
-  transition: transform 0.3s;
-}
-
-#github:hover {
-  transform: scale(1.1);
+.gallery-description:last-child,
+.gallery-size:last-child,
+.gallery-cakeprofile:last-child {
+  margin-bottom: 0; /* Remove extra margin for the last item */
 }

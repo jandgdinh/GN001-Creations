@@ -14,44 +14,60 @@ import kidsHappyCake from "../assets/kidshappycake.jpg";
 function GalleryPage() {
   const galleryData = [
     {
-      title: "Alvina's Cake",
+      title: "Alvina's Aura Cake",
       image: alvinaCake,
-      description: "A beautiful custom cake for Alvina's special day."
+      description: "A creation from pure imagination, your energy, your vibe. My beautiful client. She’s healed, radiant, and full of confidence. 💋",
+      size: "10 inch Heart Cake",
+      cakeprofile: "Vanilla Cake, Vanilla Buttercream Frosting, filled with Coffee Ganache"
     },
     {
-      title: "Oreo Cake",
+      title: "George’s Exxxtra Oreo Rum Cake",
       image: oreoCake,
-      description: "Delicious Oreo-themed cake for chocolate lovers."
+      description: "Delicious Oreo-themed cake for chocolate lovers.",
+      size: "8 inch Round Cake",
+      cakeprofile: "8 inch Vanilla Cake with Oreo specs, Buttercream Frosting and a pipe-able Rum Cream Cheese Frosting"
     },
     {
-      title: "Galentine's Cake",
+      title: "Galentine's Day Cake",
       image: galentinesCake,
-      description: "Celebrate friendship with this Galentine's Day cake."
+      description: "Celebrate friendship with this Galentine's Day cake.",
+      size: "10 inch Heart Cake",
+      cakeprofile: "10 inch Vanilla Cake with Oreo Specs and Vanilla Buttercream"
     },
     {
-      title: "Spider-Man Cake",
+      title: "Marbled Ver. 1 Spider-Man Cake",
       image: spiderManCake,
-      description: "A fun Spider-Man cake for superhero fans."
+      description: "Fun Spider-Man cake for superhero fans.",
+      size: "8 inch Round Cake",
+      cakeprofile: "8 inch Thin Marbled Vanilla Cake, Oreo filling, and Vanilla Buttercream."
     },
     {
-      title: "Mini Cake",
+      title: "Tiered Haro (Mini) Cake",
       image: miniCake,
-      description: "A cute and tasty mini cake for any occasion."
+      description: "Heavily lambeth designed black and gold themed cake.",
+      size: "Haro (mini). 3 inch Round Cake on top, 6 inch Round Cake on bottom",
+      cakeprofile: "Marbled Vanilla Cake, Strawberry Compote Filling, Vanilla Buttercream"
     },
     {
-      title: "Twin Cake",
+      title: "Tiered Minion Marbled Cak",
       image: twinCake,
-      description: "A special cake for celebrating twins."
+      description: "Minion Mayhem for all!!",
+      size: "Haro (mini). 3 inch Round Cake on top, 6 inch Round Cake on bottom",
+      cakeprofile: "Marbled Vanilla Cake, Strawberry Compote Filling, Vanilla Buttercream"
     },
     {
-      title: "Zeros Cake",
+      title: "Princess Angel’s Tiana Cake",
       image: zerosCake,
-      description: "A creative cake design with zeros."
+      description: "A creative take on Princess and the Frog themed cake!!",
+      size: "10 inch Heart Cake",
+      cakeprofile: "Vanilla Cake with Oreo Specs, Oreo Buttercream filling, Vanilla Buttercream"
     },
     {
       title: "Kids Happy Cake",
       image: kidsHappyCake,
-      description: "A cheerful cake to make kids smile."
+      description: "A cheerful cake to make kids smile.",
+      size: "Haro (mini). 3 inch Round Cake on top, 6 inch Round Cake on bottom",
+      cakeprofile: "Marbled Vanilla Cake, Strawberry Compote Filling, Vanilla Buttercream"
     }
   ];
 
@@ -65,6 +81,8 @@ function GalleryPage() {
           title={gallery.title}
           image={gallery.image}
           description={gallery.description}
+          size={gallery.size}
+          cakeprofile={gallery.cakeprofile}
         />
       ))}
     </div>
