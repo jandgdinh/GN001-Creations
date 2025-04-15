@@ -5,7 +5,7 @@
   overflow: hidden;
   width: 100%;
   max-width: 300px; /* Consistent card width */
-  height: 400px; /* Consistent card height */
+  height: 450px; /* Increased card height to accommodate larger image */
   margin: 16px;
   background-color: #fffaf5; /* Very light pastel cream */
   transition: transform 0.3s, box-shadow 0.3s;
@@ -30,7 +30,7 @@
 
 .gallery-image {
   width: 100%;
-  height: 200px; /* Consistent image height */
+  height: 250px; /* Increased image height */
   object-fit: cover; /* Ensures the image fits within the card */
   border-bottom: 1px solid #f8bbd0; /* Light pink border for separation */
 }
@@ -42,13 +42,13 @@
 }
 
 .gallery-title {
-  font-size: 1.5em;
+  font-size: 1.2em; /* Slightly smaller title */
   margin: 0 0 8px;
   color: #6a5acd; /* Lilac */
 }
 
 .gallery-description {
-  font-size: 1em;
+  font-size: 0.9em; /* Smaller description text */
   color: #555;
   margin-bottom: 16px;
 }
