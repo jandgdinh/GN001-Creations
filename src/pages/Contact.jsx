@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import emailjs from 'emailjs-com';
-import './Contact.css'; // Assuming you have a CSS file for styling
+import './Contact.css';
 
 function Contact() {
   const [name, setName] = useState('');
@@ -48,12 +48,19 @@ function Contact() {
 
     if (Object.keys(newErrors).length === 0) {
       // Send email using EmailJS
-      emailjs.sendForm('service_cvrxsjd', 'template_ktbm5jh', e.target, 'kSdpVu_sIeYYEenrQ')
+      emailjs.sendForm(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        e.target,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      )
         .then((result) => {
           console.log(result.text);
           setSuccessMessage('Your message has been sent successfully!');
-        }, (error) => {
-          console.log(error.text);
+        })
+        .catch((error) => {
+          console.error(error.text);
+          setSuccessMessage('Failed to send your message. Please try again later.');
         });
 
       // Clear form fields
