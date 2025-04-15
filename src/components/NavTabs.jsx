@@ -20,7 +20,7 @@ function NavTabs() {
       <li className="nav-item">
         <Link
           to="/Gallery"
-          className={currentPage === '/Portfolio' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === '/Gallery' ? 'nav-link active' : 'nav-link'}
         >
           Gallery
         </Link>

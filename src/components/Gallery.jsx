@@ -1,4 +1,3 @@
-// filepath: c:\Users\jandg\GN001-Creations\src\components\Gallery.jsx
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Gallery.css';
