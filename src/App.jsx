@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Nav from './components/NavTabs';
 import './App.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -24,9 +25,11 @@ function App() {
   return (
     <>
       <header>
-      <div className="logo-container">
-        <img src={cakeLogo} alt="GN001 Cakes Logo" className="logo-image" />
-      </div>
+        <div className="logo-container">
+          <Link to="/"> {/* Wrap the logo in a Link */}
+            <img src={cakeLogo} alt="GN001 Cakes Logo" className="logo-image" />
+          </Link>
+        </div>
       </header>
       <Nav />
       <main className="mx-3">

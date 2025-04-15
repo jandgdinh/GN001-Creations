@@ -37,10 +37,10 @@ export default function AboutMe() {
         <div className="card">
           <div className="card-content">
             <h4 className="h4-blob">
-              Welcome to GN001 Creations, your destination for delicious, custom-made cakes that bring sweetness to every occasion!
+              Welcome to GN-001 Creations, your destination for delicious, custom-made cakes that bring sweetness to every occasion!
             </h4>
             <h4 className="h4-blob">
-              At GN001 Creations, we specialize in crafting cakes that are not only visually stunning but also irresistibly tasty. From birthdays to weddings, we create cakes that make your celebrations unforgettable.
+              At GN-001 Creations, we specialize in crafting cakes that are not only visually stunning but also irresistibly tasty. From birthdays to weddings, we create cakes that make your celebrations unforgettable.
             </h4>
             <h4 className="h4-blob">
               Using only the finest ingredients, we offer a variety of flavors and designs to suit your preferences. Let us help you create the perfect cake for your special moments!
