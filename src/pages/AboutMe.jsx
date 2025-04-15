@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import galentinesCake from "../assets/galentinescake.jpg";
 import oreoCake from "../assets/oreo.jpg";
-import spiderManCake from "../assets/spiderManCake.jpg";
+import spiderManCake from "../assets/spidermancake.jpg";
 
 // import cake1 from "../assets/cake1.jpg";
 // import cake2 from "../assets/cake2.jpg";
