@@ -5,6 +5,9 @@ import "../App.css";
 import "../pages/AboutMe.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import galentinesCake from "../assets/galentinescake.jpg";
+import oreoCake from "../assets/oreo.jpg";
+import spiderManCake from "../assets/spiderManCake.jpg";
 
 // import cake1 from "../assets/cake1.jpg";
 // import cake2 from "../assets/cake2.jpg";
@@ -12,10 +15,11 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function AboutMe() {
   const featuredCakes = [
-    { id: 1, image: "https://via.placeholder.com/600x400?text=Chocolate+Fudge+Cake", title: "Chocolate Fudge Cake" },
-    { id: 2, image: "https://via.placeholder.com/600x400?text=Vanilla+Buttercream+Cake", title: "Vanilla Buttercream Cake" },
-    { id: 3, image: "https://via.placeholder.com/600x400?text=Red+Velvet+Cake", title: "Red Velvet Cake" },
+    { id: 1, image: galentinesCake, title: "Galentine's" },
+    { id: 2, image: oreoCake, title: "Oreo" },
+    { id: 3, image: spiderManCake, title: "Spiderman" },
   ];
+
   const sliderSettings = {
     dots: true,
     infinite: true,

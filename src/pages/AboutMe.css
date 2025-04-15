@@ -85,7 +85,11 @@
 .carousel-slide {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; /* Center the carousel content */
+  justify-content: center; /* Center the carousel content vertically */
+  width: 100%;
+  max-width: 600px; /* Optional: Limit the width of the carousel */
+  margin: 0 auto; /* Center the carousel container */
 }
 
 .carousel-image {

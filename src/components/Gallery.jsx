@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './Gallery.css';
-import githubIcon from '../assets/githubimage.png';
 
 function Gallery({ title, image, description, githubLink, deployedLink }) {
   return (
