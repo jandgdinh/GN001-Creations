@@ -33,7 +33,7 @@ function App() {
         <Outlet />
       </main>
       <footer>
-        <p>&copy; 2025 GN001 Cakes</p>
+        <p>&copy; 2025 GN-001 Creations</p>
         <div className="footer-links">
           <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faInstagram} size="2x" />
