@@ -3,9 +3,9 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: rgba(248, 187, 208, 0.6); /* Light pink with more transparency */
+  background: linear-gradient(135deg, #f8bbd0, #ffe4e1); /* Match header gradient */
+  text-align: center;
 }
-
 
 .splash-logo {
   width: 300px;
