@@ -11,21 +11,60 @@ body {
 }
 
 header {
+  position: relative; /* Needed for sparkles */
   text-align: center;
   padding: 20px;
   background: linear-gradient(135deg, #f8bbd0, #ffe4e1); /* Gradient from light pink to pastel pink */
   color: #6a5acd; /* Lilac */
   font-family: "Nanum Brush Script", cursive;
   font-size: 2.5em;
-
+  overflow: hidden; /* Prevent sparkles from overflowing */
 }
 
 footer {
+  position: relative; /* Needed for sparkles */
   text-align: center;
   padding: 1rem;
   background: linear-gradient(135deg, #f8bbd0, #ffe4e1); /* Gradient from light pink to pastel pink */
   color: #6a5acd; /* Lilac */
+  overflow: hidden; /* Prevent sparkles from overflowing */
+}
 
+header::before,
+header::after,
+footer::before,
+footer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0) 80%);
+  opacity: 0.6;
+  animation: sparkle 5s infinite linear;
+  pointer-events: none; /* Prevent interaction with sparkles */
+}
+
+header::after,
+footer::after {
+  animation-delay: 2.5s; /* Offset the second sparkle layer for variety */
+}
+
+/* Sparkle animation */
+@keyframes sparkle {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(50%, 50%) scale(1.5);
+    opacity: 0.4;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
 }
 .footer-links {
   display: flex;
