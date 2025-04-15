@@ -2,30 +2,31 @@
 
 html,
 body {
-  background-color: #ffe4e1; /* Light pink */
+  background: linear-gradient(135deg, #ffe4e1, #fffaf0); /* Gradient from light pink to pastel cream */
   color: #6a5acd; /* Lilac */
   margin: 0;
   padding: 0;
   font-family: Arial, sans-serif;
+  height: 100%; /* Ensure the gradient covers the full viewport */
 }
 
 header {
   text-align: center;
   padding: 20px;
-  background-color: #f8bbd0; /* Light pink accent */
+  background: linear-gradient(135deg, #f8bbd0, #ffe4e1); /* Gradient from light pink to pastel pink */
   color: #6a5acd; /* Lilac */
   font-family: "Nanum Brush Script", cursive;
   font-size: 2.5em;
+
 }
 
 footer {
   text-align: center;
   padding: 1rem;
-  background-color: #f8bbd0; /* Light pink accent */
+  background: linear-gradient(135deg, #f8bbd0, #ffe4e1); /* Gradient from light pink to pastel pink */
   color: #6a5acd; /* Lilac */
-  border-top: 2px solid #6a5acd;
-}
 
+}
 .footer-links {
   display: flex;
   justify-content: center;
