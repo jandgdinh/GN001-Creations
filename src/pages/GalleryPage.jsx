@@ -1,14 +1,14 @@
 import Gallery from "../components/Gallery";
 import '../components/Gallery.css';
 
-import alvinaCake from "../assets/alvinaCake.jpg";
+import alvinaCake from "../assets/alvinacake.jpg";
 import oreoCake from "../assets/oreo.jpg";
 import galentinesCake from "../assets/galentinescake.jpg";
-import spiderManCake from "../assets/spiderManCake.jpg";
-import miniCake from "../assets/miniCake.jpg";
-import twinCake from "../assets/twinCake.jpg";
-import zerosCake from "../assets/zerosCake.jpg";
-import kidsHappyCake from "../assets/kidsHappyCake.jpg";
+import spiderManCake from "../assets/spidermancake.jpg";
+import miniCake from "../assets/minicake.jpg";
+import twinCake from "../assets/twincake.jpg";
+import zerosCake from "../assets/zeroscake.jpg";
+import kidsHappyCake from "../assets/kidshappycake.jpg";
 
 
 function GalleryPage() {
