@@ -9,7 +9,7 @@ import Error from './pages/Error';
 import Contact from './pages/Contact';
 import AboutMe from './pages/AboutMe';
 import GalleryPage from './pages/GalleryPage';
-import Resume from './pages/Resume';
+import Order from './pages/Order';
 
 
 const router = createBrowserRouter([
@@ -35,8 +35,8 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
       {
-        path: '/Resume',
-        element: <Resume />,
+        path: '/Order',
+        element: <Order />,
       },
     ],
   },

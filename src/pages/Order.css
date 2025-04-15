@@ -1,0 +1,41 @@
+.orderform-button {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.orderform-button a {
+  text-decoration: none;
+}
+
+.orderform-button button {
+  padding: 10px 20px;
+  background-color: #6a5acd; /* Lilac */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.orderform-button button:hover {
+  background-color: #c8a2c8; /* Light pastel lilac */
+}
+
+.orderform-button button:active {
+  transform: translateY(2px);
+  background-color: #9370db; /* Medium orchid */
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.Skills {
+  margin-top: 0px;
+}
