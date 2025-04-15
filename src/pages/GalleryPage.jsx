@@ -61,7 +61,10 @@ function GalleryPage() {
       description: "A creative take on Princess and the Frog themed cake!!",
       size: "10 inch Heart Cake",
       cakeprofile: "Vanilla Cake with Oreo Specs, Oreo Buttercream filling, Vanilla Buttercream"
-    },
+    }
+  ];
+
+  const clientGalleryData = [
     {
       title: "Kids Happy Cake",
       image: kidsHappyCake,
@@ -71,21 +74,36 @@ function GalleryPage() {
     }
   ];
 
+
   return (
     <>
-    <h2>Gallery</h2>
-    <div className="gallery-container">
-      {galleryData.map((gallery, index) => (
-        <Gallery
-          key={index}
-          title={gallery.title}
-          image={gallery.image}
-          description={gallery.description}
-          size={gallery.size}
-          cakeprofile={gallery.cakeprofile}
-        />
-      ))}
-    </div>
+      <h2>Gallery</h2>
+      <div className="gallery-container">
+        {galleryData.map((gallery, index) => (
+          <Gallery
+            key={index}
+            title={gallery.title}
+            image={gallery.image}
+            description={gallery.description}
+            size={gallery.size}
+            cakeprofile={gallery.cakeprofile}
+          />
+        ))}
+      </div>
+      <h2>Client Gallery</h2>
+      <div className="clientgallery-container">
+
+        `        {clientGalleryData.map((gallery, index) => (
+          <Gallery
+            key={index}
+            title={gallery.title}
+            image={gallery.image}
+            description={gallery.description}
+            size={gallery.size}
+            cakeprofile={gallery.cakeprofile}
+          />
+        ))}
+      </div>
     </>
   );
 }
