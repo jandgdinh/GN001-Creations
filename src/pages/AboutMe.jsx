@@ -43,8 +43,8 @@ export default function AboutMe() {
             </h4>
           </div>
           <div className="button-container">
-            <Link to="/portfolio">
-              <button className="portfolio-button">View Our Gallery</button>
+            <Link to="/gallery">
+              <button className="gallery-button">View Our Gallery</button>
             </Link>
           </div>
         </div>

@@ -55,7 +55,7 @@
   margin-top: 20px;
 }
 
-.portfolio-button {
+.gallery-button {
   background-color: #f8bbd0; /* Light pink accent */
   color: #6a5acd; /* Lilac */
   border: none;
@@ -66,7 +66,7 @@
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.portfolio-button:hover {
+.gallery-button:hover {
   background-color: #ffe4e1; /* Lighter pastel pink */
   transform: scale(1.05); /* Slightly enlarge the button on hover */
 }
@@ -113,7 +113,7 @@
     font-size: 1em; /* Reduce font size for better readability */
   }
 
-  .portfolio-button {
+  .gallery-button {
     font-size: 0.9em; /* Adjust button size */
     padding: 8px 16px;
   }
@@ -129,7 +129,7 @@
     font-size: 0.9em; /* Further reduce font size */
   }
 
-  .portfolio-button {
+  .gallery-button {
     font-size: 0.8em; /* Adjust button size */
     padding: 6px 12px;
   }
