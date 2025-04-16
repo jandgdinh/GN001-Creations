@@ -9,15 +9,16 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+  overflow: hidden; /* Prevents scrolling of the background content */
 }
 
 .modal-content {
   position: relative;
   max-width: 90vw;
   max-height: 90vh;
-  overflow: auto; /* Add scrollbars if the content overflows */
+  overflow: auto; /* Allows scrolling if content is too large */
   border-radius: 8px;
-  background: #fff;
+  background: #f8bbd0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,4 +90,16 @@
 .modal-controls button:active {
   background: #ec407a; /* Even darker pink when clicked */
   transform: scale(0.95); /* Slight shrink effect on click */
+}
+
+@media (min-width: 1200px) {
+  .modal-content {
+    max-width: 45vw; /* Reduce the modal width for larger screens */
+    max-height: 90vh; /* Reduce the modal height for larger screens */
+  }
+
+  .modal-image {
+    max-width: 100%; /* Ensure the image fits within the modal content */
+    max-height: 100%; /* Ensure the image fits within the modal content */
+  }
 }
