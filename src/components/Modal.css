@@ -13,20 +13,22 @@
 
 .modal-content {
   position: relative;
-  max-width: 90%; /* Ensure the modal content doesn't exceed 90% of the viewport width */
-  max-height: 90%; /* Ensure the modal content doesn't exceed 90% of the viewport height */
+  max-width: 90vw; /* Limit the modal content to 90% of the viewport width */
+  max-height: 90vh; /* Limit the modal content to 90% of the viewport height */
   overflow: hidden; /* Prevent content overflow */
   border-radius: 8px; /* Optional: Add rounded corners */
   background: #fff; /* Optional: Add a background color */
+  display: flex; /* Ensure the image is centered */
+  justify-content: center;
+  align-items: center;
 }
 
 .modal-image {
-  width: auto; /* Maintain the aspect ratio */
+  width: 100%; /* Default to full width */
   height: auto; /* Maintain the aspect ratio */
-  max-width: 100%; /* Ensure the image fits within the modal content */
-  max-height: 100%; /* Ensure the image fits within the modal content */
-  display: block; /* Center the image */
-  margin: 0 auto;
+  max-width: 90vw; /* Ensure the image fits within the modal content */
+  max-height: 90vh; /* Ensure the image fits within the modal content */
+  object-fit: contain; /* Ensure the image scales without being cropped */
 }
 
 .modal-close {
@@ -39,4 +41,16 @@
   color: #fff;
   cursor: pointer;
   z-index: 1001;
+}
+
+@media (min-width: 1200px) {
+  .modal-content {
+    max-width: 70vw; /* Reduce the modal width for larger screens */
+    max-height: 70vh; /* Reduce the modal height for larger screens */
+  }
+
+  .modal-image {
+    max-width: 100%; /* Ensure the image fits within the modal content */
+    max-height: 100%; /* Ensure the image fits within the modal content */
+  }
 }
