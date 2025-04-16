@@ -3,7 +3,7 @@ import '../components/Gallery.css';
 import { useState } from "react";
 import Modal from "../components/Modal";
 import Card from "../components/Card";
-import alvinaCake from "../assets/alvinacake.jpg";
+import alvinaCakeCloser from "../assets/alvinacakecloser.jpeg";
 import oreoCake from "../assets/oreo.jpg";
 import galentinesCake from "../assets/galentinescake.jpg";
 import spiderManCake from "../assets/spidermancake.jpg";
@@ -12,6 +12,9 @@ import twinCake from "../assets/twincake.jpg";
 import zerosCake from "../assets/zeroscake.jpg";
 import kidsHappyCake from "../assets/kidshappycake.jpg";
 import pinkCakeVideo from "../assets/pinkcakevideo.mp4";
+import clientZeroCake from "../assets/clientzerocake.jpeg";
+import clientmugenCake from "../assets/clientmugencake.jpeg";
+import alvinaCake from "../assets/alvinacake.jpg";
 
 
 function GalleryPage() {
@@ -27,7 +30,7 @@ function GalleryPage() {
   const galleryData = [
     {
       title: "Alvina's Aura Cake",
-      image: alvinaCake,
+      image: alvinaCakeCloser,
       description: "A creation from pure imagination, your energy, your vibe. My beautiful client. She’s healed, radiant, and full of confidence. 💋",
       size: "10 inch Heart Cake",
       cakeprofile: "Vanilla Cake, Vanilla Buttercream Frosting, filled with Coffee Ganache"
@@ -83,6 +86,27 @@ function GalleryPage() {
       description: "A cheerful cake to make kids smile.",
       size: "Haro (mini). 3 inch Round Cake on top, 6 inch Round Cake on bottom",
       cakeprofile: "Marbled Vanilla Cake, Strawberry Compote Filling, Vanilla Buttercream"
+    },
+    {
+      title: "Client Zero's Cake",
+      image: clientZeroCake,
+      description: "A delightful cake for a special client.",
+      size: "10 inch Round Cake",
+      cakeprofile: "Vanilla Cake with Oreo Specs, Oreo Buttercream filling, Vanilla Buttercream"
+    },
+    {
+      title: "Client Mugen's Cake",
+      image: clientmugenCake,
+      description: "A cake made with love for a special client.",
+      size: "8 inch Round Cake",
+      cakeprofile: "Vanilla Cake with Oreo Specs, Oreo Buttercream filling, Vanilla Buttercream"
+    },
+    {
+      title: "Alvina's Cake",
+      image: alvinaCake,
+      description: "A beautiful cake for a beautiful client.",
+      size: "10 inch Heart Cake",
+      cakeprofile: "Vanilla Cake with Oreo Specs, Oreo Buttercream filling, Vanilla Buttercream"
     }
   ];
 
@@ -117,10 +141,14 @@ function GalleryPage() {
       <div className="clientgallery-container">
         {clientGalleryData.map((gallery, index) => (
           <div key={index} onClick={() => handleImageClick(gallery.image)}>
-            <Card
-              image={gallery.image}
-            />
-          </div>
+          <Gallery
+            title={gallery.title}
+            image={gallery.image}
+            description={gallery.description}
+            size={gallery.size}
+            cakeprofile={gallery.cakeprofile}
+          />
+        </div>
         ))}
       </div>
       <Modal image={selectedImage} onClose={handleCloseModal} />
