@@ -13,44 +13,80 @@
 
 .modal-content {
   position: relative;
-  max-width: 90vw; /* Limit the modal content to 90% of the viewport width */
-  max-height: 90vh; /* Limit the modal content to 90% of the viewport height */
-  overflow: hidden; /* Prevent content overflow */
-  border-radius: 8px; /* Optional: Add rounded corners */
-  background: #fff; /* Optional: Add a background color */
-  display: flex; /* Ensure the image is centered */
+  max-width: 90vw;
+  max-height: 90vh;
+  overflow: auto; /* Add scrollbars if the content overflows */
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .modal-image {
-  width: 100%; /* Default to full width */
-  height: auto; /* Maintain the aspect ratio */
-  max-width: 90vw; /* Ensure the image fits within the modal content */
-  max-height: 90vh; /* Ensure the image fits within the modal content */
-  object-fit: contain; /* Ensure the image scales without being cropped */
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
 }
 
 .modal-close {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: none;
-  border: none;
-  font-size: 24px;
-  color: #fff;
+  background: #f8bbd0; /* Light pink color to match the theme */
+  border: 1px solid #f48fb1; /* Slightly darker pink for the border */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  padding: 8px 16px; /* Adjust padding for better spacing */
+  font-size: 14px; /* Keep the font size readable */
+  font-weight: bold; /* Make the text stand out */
+  color: #fff; /* White text for contrast */
   cursor: pointer;
   z-index: 1001;
+  transition: background 0.3s, transform 0.2s; /* Smooth hover and click effects */
 }
 
-@media (min-width: 1200px) {
-  .modal-content {
-    max-width: 70vw; /* Reduce the modal width for larger screens */
-    max-height: 70vh; /* Reduce the modal height for larger screens */
-  }
+.modal-close:hover {
+  background: #f48fb1; /* Darker pink on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
 
-  .modal-image {
-    max-width: 100%; /* Ensure the image fits within the modal content */
-    max-height: 100%; /* Ensure the image fits within the modal content */
-  }
+.modal-close:active {
+  background: #ec407a; /* Even darker pink when clicked */
+  transform: scale(0.95); /* Slight shrink effect on click */
+}
+
+
+
+.modal-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 1002;
+}
+
+.modal-controls button {
+  background: #f8bbd0; /* Light pink color to match a soft theme */
+  border: 1px solid #f48fb1; /* Slightly darker pink for the border */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  padding: 8px 16px; /* Adjust padding for better spacing */
+  font-size: 14px; /* Keep the font size readable */
+  font-weight: bold; /* Make the text stand out */
+  color: #fff; /* White text for contrast */
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s; /* Smooth hover and click effects */
+}
+
+.modal-controls button:hover {
+  background: #f48fb1; /* Darker pink on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.modal-controls button:active {
+  background: #ec407a; /* Even darker pink when clicked */
+  transform: scale(0.95); /* Slight shrink effect on click */
 }
