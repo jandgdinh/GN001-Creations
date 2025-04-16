@@ -15,9 +15,9 @@ import spiderManCake from "../assets/spidermancake.jpg";
 
 export default function AboutMe() {
   const featuredCakes = [
-    { id: 1, image: galentinesCake, title: "Galentine's" },
-    { id: 2, image: oreoCake, title: "Oreo" },
-    { id: 3, image: spiderManCake, title: "Spiderman" },
+    { id: 1, image: galentinesCake, title: "Galentine's Day Cake" },
+    { id: 2, image: oreoCake, title: "George's Exxxtra Oreo Rum Cake" },
+    { id: 3, image: spiderManCake, title: "Marbled Ver. 1 Spider-Man Cake" },
   ];
 
   const sliderSettings = {
