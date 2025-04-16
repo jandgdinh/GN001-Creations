@@ -35,25 +35,25 @@ function GalleryPage() {
       cakeprofile: "Vanilla Cake, Vanilla Buttercream Frosting, filled with Coffee Ganache"
     },
     {
-      title: "George’s Exxxtra Oreo Rum Cake",
+      title: "George's Exxxtra Oreo Rum Cake",
       image: oreoCake,
       description: "Delicious Oreo-themed cake for chocolate lovers.",
       size: "8 inch Round Cake",
-      cakeprofile: "8 inch Vanilla Cake with Oreo specs, Buttercream Frosting and a pipe-able Rum Cream Cheese Frosting"
+      cakeprofile: "Vanilla Cake with Oreo specs, Buttercream Frosting and a pipe-able Rum Cream Cheese Frosting"
     },
     {
       title: "Galentine's Day Cake",
       image: galentinesCake,
       description: "Celebrate friendship with this Galentine's Day cake.",
       size: "10 inch Heart Cake",
-      cakeprofile: "10 inch Vanilla Cake with Oreo Specs and Vanilla Buttercream"
+      cakeprofile: "Vanilla Cake with Oreo Specs and Vanilla Buttercream"
     },
     {
       title: "Marbled Ver. 1 Spider-Man Cake",
       image: spiderManCake,
       description: "Fun Spider-Man cake for superhero fans.",
       size: "8 inch Round Cake",
-      cakeprofile: "8 inch Thin Marbled Vanilla Cake, Oreo filling, and Vanilla Buttercream."
+      cakeprofile: "Thin Marbled Vanilla Cake, Oreo filling, and Vanilla Buttercream."
     },
     {
       title: "Tiered Haro (Mini) Cake",
@@ -79,34 +79,35 @@ function GalleryPage() {
   ];
 
   const clientGalleryData = [
+
     {
-      title: "Kids Happy Cake",
-      image: kidsHappyCake,
-      description: "A cheerful cake to make kids smile.",
-      size: "Haro (mini). 3 inch Round Cake on top, 6 inch Round Cake on bottom",
-      cakeprofile: "Marbled Vanilla Cake, Strawberry Compote Filling, Vanilla Buttercream"
-    },
-    {
-      title: "Client Zero's Cake",
+      title: "Zero's Cake",
       image: clientZeroCake,
       description: "A delightful cake for a special client.",
       size: "10 inch Round Cake",
       cakeprofile: "Vanilla Cake with Oreo Specs, Oreo Buttercream filling, Vanilla Buttercream"
     },
     {
-      title: "Client Mugen's Cake",
+      title: "Mugen's Cake",
       image: clientmugenCake,
       description: "A cake made with love for a special client.",
       size: "8 inch Round Cake",
       cakeprofile: "Vanilla Cake with Oreo Specs, Oreo Buttercream filling, Vanilla Buttercream"
     },
     {
-      title: "Alvina's Cake",
+      title: "Alvina's Aura Cake",
       image: alvinaCake,
       description: "A beautiful cake for a beautiful client.",
       size: "10 inch Heart Cake",
-      cakeprofile: "Vanilla Cake with Oreo Specs, Oreo Buttercream filling, Vanilla Buttercream"
-    }
+      cakeprofile: "Vanilla Cake, Vanilla Buttercream Frosting, filled with Coffee Ganache"
+    },
+    {
+      title: "Kid's Happy Cake",
+      image: kidsHappyCake,
+      description: "A cheerful cake to make kids smile.",
+      size: "Haro (mini). 3 inch Round Cake on top, 6 inch Round Cake on bottom",
+      cakeprofile: "Marbled Vanilla Cake, Strawberry Compote Filling, Vanilla Buttercream"
+    },
   ];
 
 
