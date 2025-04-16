@@ -9,10 +9,6 @@ import galentinesCake from "../assets/galentinescake.jpg";
 import oreoCake from "../assets/oreo.jpg";
 import spiderManCake from "../assets/spidermancake.jpg";
 
-// import cake1 from "../assets/cake1.jpg";
-// import cake2 from "../assets/cake2.jpg";
-// import cake3 from "../assets/cake3.jpg";
-
 export default function AboutMe() {
   const featuredCakes = [
     { id: 1, image: galentinesCake, title: "Galentine's Day Cake" },
@@ -32,7 +28,6 @@ export default function AboutMe() {
 
   return (
     <div className="about-container">
-
       <div className="about-content">
         <div className="card">
           <div className="card-content">
@@ -52,17 +47,22 @@ export default function AboutMe() {
             </Link>
           </div>
         </div>
+
+        {/* Divider */}
+        <hr className="section-divider" />
+
         <div className="featured-cakes">
-        <h2>Featured Cakes</h2>
-        <Slider {...sliderSettings}>
-          {featuredCakes.map((cake) => (
-            <div key={cake.id} className="carousel-slide">
-              <img src={cake.image} alt={cake.title} className="carousel-image" />
-              <h3 className="carousel-title">{cake.title}</h3>
-            </div>
-          ))}
-        </Slider>
-      </div>
+          <h2>Featured Cakes</h2>
+          <Slider {...sliderSettings}>
+            {featuredCakes.map((cake) => (
+              <div key={cake.id} className="carousel-slide">
+                <img src={cake.image} alt={cake.title} className="carousel-image" />
+                <h3 className="carousel-title">{cake.title}</h3>
+              </div>
+            ))}
+          </Slider>
+        </div>
+
       </div>
     </div>
   );

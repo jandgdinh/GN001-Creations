@@ -11,7 +11,7 @@ import miniCake from "../assets/minicake.jpg";
 import twinCake from "../assets/twincake.jpg";
 import zerosCake from "../assets/zeroscake.jpg";
 import kidsHappyCake from "../assets/kidshappycake.jpg";
-
+import pinkCakeVideo from "../assets/pinkcakevideo.mp4";
 
 
 function GalleryPage() {
@@ -103,6 +103,16 @@ function GalleryPage() {
           </div>
         ))}
       </div>
+      <hr className="section-divider" />
+      <h2 className="cake-spotlight-title">Cake Spotlight</h2>
+      <div className="video-card">
+        <video controls className="centered-video">
+          <source src={pinkCakeVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <hr className="section-divider" />
       <h2>Client Gallery</h2>
       <div className="clientgallery-container">
         {clientGalleryData.map((gallery, index) => (
