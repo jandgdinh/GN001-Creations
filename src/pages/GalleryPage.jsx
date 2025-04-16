@@ -2,8 +2,7 @@ import Gallery from "../components/Gallery";
 import '../components/Gallery.css';
 import { useState } from "react";
 import Modal from "../components/Modal";
-import Card from "../components/Card";
-import alvinaCakeCloser from "../assets/alvinacakecloser.jpeg";
+import alvinaCakeCloser from "../assets/alvinacloseupcake.jpg";
 import oreoCake from "../assets/oreo.jpg";
 import galentinesCake from "../assets/galentinescake.jpg";
 import spiderManCake from "../assets/spidermancake.jpg";
@@ -14,7 +13,7 @@ import kidsHappyCake from "../assets/kidshappycake.jpg";
 import pinkCakeVideo from "../assets/pinkcakevideo.mp4";
 import clientZeroCake from "../assets/clientzerocake.jpeg";
 import clientmugenCake from "../assets/clientmugencake.jpeg";
-import alvinaCake from "../assets/alvinacake.jpg";
+import alvinaCake from "../assets/alvinacakecloser.jpeg";
 
 
 function GalleryPage() {

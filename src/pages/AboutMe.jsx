@@ -8,12 +8,16 @@ import "slick-carousel/slick/slick-theme.css";
 import galentinesCake from "../assets/galentinescake.jpg";
 import oreoCake from "../assets/oreo.jpg";
 import spiderManCake from "../assets/spidermancake.jpg";
+import alvinaCakeCloser from "../assets/alvinacloseupcake.jpg";
+import zerosCake from "../assets/zeroscake.jpg";
 
 export default function AboutMe() {
   const featuredCakes = [
     { id: 1, image: galentinesCake, title: "Galentine's Day Cake" },
-    { id: 2, image: oreoCake, title: "George's Exxxtra Oreo Rum Cake" },
+    { id: 2, image: alvinaCakeCloser, title: "Alvina's Aura Cake" },
     { id: 3, image: spiderManCake, title: "Marbled Ver. 1 Spider-Man Cake" },
+    { id: 4, image: oreoCake, title: "George's Exxxtra Oreo Rum Cake" },
+    { id: 5, image: zerosCake, title: "Princess Angel's Tiana Cake" },
   ];
 
   const sliderSettings = {
