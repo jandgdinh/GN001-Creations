@@ -87,10 +87,13 @@
   text-align: center;
 }
 .centered-video {
-  width: 400px; /* Adjust the width as needed */
-  height: 225px; /* Adjust the height as needed */
+  position: relative;
+  width: 100%; /* Make the video take the full width of its container */
+  max-width: 300px; /* Optional: Limit the maximum width */
+  aspect-ratio: 9 / 16; /* Set a vertical-friendly aspect ratio (e.g., 9:16) */
   border-radius: 8px; /* Makes the video corners rounded */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow */
   overflow: hidden; /* Ensures the video respects the border-radius */
+  background-color: #fffaf5; /* Optional: Add a background color to fill space */
 }
 
