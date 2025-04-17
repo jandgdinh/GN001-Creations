@@ -2,7 +2,7 @@
 ### 🛒 Cake Selling Website
 
 <!-- ![Cake Shop Banner](https://via.placeholder.com/1200x300?text=Order+Your+Dream+Cake) -->
-![GN-001 Cake Shop Screenshot](./assets/gn-001screenshot.png)
+![GN-001 Cake Shop Screenshot](https://https://github.com/jandgdinh/GN001-Creations/blob/main/src/assets/gn-001screenshot.png)
 
 ---
 
