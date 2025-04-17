@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "../App.css";
-import "../pages/AboutMe.css";
+import "../pages/Home.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import galentinesCake from "../assets/galentinescake.jpg";
@@ -11,7 +11,7 @@ import spiderManCake from "../assets/spidermancake.jpg";
 import alvinaCakeCloser from "../assets/alvinacloseupcake.jpg";
 import zerosCake from "../assets/zeroscake.jpg";
 
-export default function AboutMe() {
+export default function Home() {
   const featuredCakes = [
     { id: 1, image: galentinesCake, title: "Galentine's Day Cake" },
     { id: 2, image: alvinaCakeCloser, title: "Alvina's Aura Cake" },
@@ -31,8 +31,8 @@ export default function AboutMe() {
   };
 
   return (
-    <div className="about-container">
-      <div className="about-content">
+    <div className="home-container">
+      <div className="home-content">
         <div className="card">
           <div className="card-content">
             <h4 className="h4-blob">

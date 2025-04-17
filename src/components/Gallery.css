@@ -5,6 +5,7 @@
   overflow: hidden;
   width: 100%;
   max-width: 300px; /* Consistent card width */
+  height: 500px;
   margin: 16px;
   background-color: #fffaf5; /* Very light pastel cream */
   transition: transform 0.3s, box-shadow 0.3s;
@@ -44,8 +45,12 @@
 
 .gallery-content {
   padding: 16px;
-  text-align: center;
+  text-align: left; /* Align text to the left */
   flex-grow: 1; /* Ensures content fills the remaining space */
+  /* overflow: auto; */
+  display: flex;
+  flex-direction: column;
+
 }
 
 .gallery-title {

@@ -26,7 +26,7 @@ function App() {
     <>
       <header>
         <div className="logo-container">
-          <Link to="/"> {/* Wrap the logo in a Link */}
+          <Link to="/">
             <img src={cakeLogo} alt="GN001 Cakes Logo" className="logo-image" />
           </Link>
         </div>

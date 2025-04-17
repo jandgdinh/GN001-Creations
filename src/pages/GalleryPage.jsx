@@ -63,7 +63,7 @@ function GalleryPage() {
       cakeprofile: "Marbled Vanilla Cake, Strawberry Compote Filling, Vanilla Buttercream"
     },
     {
-      title: "Tiered Minion Marbled Cak",
+      title: "Tiered Minion Marbled Cake",
       image: twinCake,
       description: "Minion Mayhem for all!!",
       size: "Haro (mini). 3 inch Round Cake on top, 6 inch Round Cake on bottom",

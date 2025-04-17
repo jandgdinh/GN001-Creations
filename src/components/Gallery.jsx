@@ -13,8 +13,8 @@ function Gallery({ title = 'Untitled', image = 'https://via.placeholder.com/600x
       <div className="gallery-content">
         <h3 className="gallery-title">{title}</h3>
         <p className="gallery-description">{description}</p>
-        <p className="gallery-size">{size}</p>
-        <p className="gallery-cakeprofile">{cakeprofile}</p>
+        <p className="gallery-size"><strong>Size:</strong> {size}</p>
+        <p className="gallery-cakeprofile"><strong>Cake Profile:</strong> {cakeprofile}</p>
       </div>
     </div>
   );
