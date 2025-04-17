@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
+import HomeModal from "../components/HomeModal"; // Use the new HomeModal component
 import "../App.css";
 import "../pages/Home.css";
 import "slick-carousel/slick/slick.css";
@@ -12,6 +13,8 @@ import alvinaCakeCloser from "../assets/alvinacloseupcake.jpg";
 import zerosCake from "../assets/zeroscake.jpg";
 
 export default function Home() {
+  const [selectedCakeIndex, setSelectedCakeIndex] = useState(null);
+
   const featuredCakes = [
     { id: 1, image: galentinesCake, title: "Galentine's Day Cake" },
     { id: 2, image: alvinaCakeCloser, title: "Alvina's Aura Cake" },
@@ -28,6 +31,24 @@ export default function Home() {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
+  };
+
+  const openModal = (index) => {
+    setSelectedCakeIndex(index);
+  };
+
+  const closeModal = () => {
+    setSelectedCakeIndex(null);
+  };
+
+  const nextCake = () => {
+    setSelectedCakeIndex((prevIndex) => (prevIndex + 1) % featuredCakes.length);
+  };
+
+  const prevCake = () => {
+    setSelectedCakeIndex((prevIndex) =>
+      (prevIndex - 1 + featuredCakes.length) % featuredCakes.length
+    );
   };
 
   return (
@@ -58,8 +79,12 @@ export default function Home() {
         <div className="featured-cakes">
           <h2>Featured Cakes</h2>
           <Slider {...sliderSettings}>
-            {featuredCakes.map((cake) => (
-              <div key={cake.id} className="carousel-slide">
+            {featuredCakes.map((cake, index) => (
+              <div
+                key={cake.id}
+                className="carousel-slide"
+                onClick={() => openModal(index)}
+              >
                 <img src={cake.image} alt={cake.title} className="carousel-image" />
                 <h3 className="carousel-title">{cake.title}</h3>
               </div>
@@ -67,6 +92,17 @@ export default function Home() {
           </Slider>
         </div>
 
+        {/* Home Modal */}
+        {selectedCakeIndex !== null && (
+          <HomeModal
+            image={featuredCakes[selectedCakeIndex].image}
+            onClose={closeModal}
+            onNext={nextCake}
+            onPrev={prevCake}
+          >
+            <h3>{featuredCakes[selectedCakeIndex].title}</h3>
+          </HomeModal>
+        )}
       </div>
     </div>
   );
