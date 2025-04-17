@@ -38,11 +38,11 @@ function App() {
       <footer>
         <p>&copy; 2025 GN-001 Creations</p>
         <div className="footer-links">
-          <a href="https://instagram.com/gn001.creations/" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faInstagram} size="2x" />
-          </a>
           <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faFacebook} size="2x" />
+          </a>
+          <a href="https://instagram.com/gn001.creations/" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} size="2x" />
           </a>
           <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer">
             <FontAwesomeIcon icon={faPinterest} size="2x" />
