@@ -21,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: #fffaf5;
   }
   
   .home-modal-image {
