@@ -1,45 +1,40 @@
-import { Link, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './NavTabs.css';
 
 function NavTabs() {
-  const currentPage = useLocation().pathname;
-
   return (
     <ul className="nav nav-tabs">
       <li className="nav-item">
-
-      </li>
-      <li className="nav-item">
-        <Link
+        <NavLink
           to="/"
-          className={currentPage === '/' ? 'nav-link active' : 'nav-link'}
+          className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
         >
           Home
-        </Link>
+        </NavLink>
       </li>
       <li className="nav-item">
-        <Link
+        <NavLink
           to="/Gallery"
-          className={currentPage === '/Gallery' ? 'nav-link active' : 'nav-link'}
+          className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
         >
           Gallery
-        </Link>
+        </NavLink>
       </li>
       <li className="nav-item">
-        <Link
+        <NavLink
           to="/Contact"
-          className={currentPage === '/Contact' ? 'nav-link active' : 'nav-link'}
+          className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
         >
           Contact
-        </Link>
+        </NavLink>
       </li>
       <li className="nav-item">
-        <Link
+        <NavLink
           to="/Order"
-          className={currentPage === '/Order' ? 'nav-link active' : 'nav-link'}
+          className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
         >
           Order
-        </Link>
+        </NavLink>
       </li>
     </ul>
   );
